@@ -1,0 +1,51 @@
+#gameboard-container {
+  width: 700px;
+  height: 750px;
+  border: 8px solid #f06;
+  background: pink;
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+
+div.column {
+  width: 100px;
+  height: 600px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+}
+
+div.piece {
+  width: 80px;
+  height: 90px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 100%;
+  float:left;
+  margin: 2px;
+  margin-bottom: 5px;
+  margin-left: 7px;
+  background: rgba(250,255,255,.5)
+}
+div.hover {
+  background: rgba(250,255,255,.8)
+}
+
+div.red {
+  background: rgb(255,0,0);
+}
+div.black {
+  background: rgb(0,0,0);
+}
+h1 {
+  font-size: 50px;
+  color: #f06;
+}
+
+.button {
+  font-size: 26px;
+  font-weight: bold;
+  display: none;
+  background-color: #f06;
+  color: white;
+}
