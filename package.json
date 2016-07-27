@@ -1,0 +1,9 @@
+{
+  "name": "connect-four",
+  "author": "Khadijah Celestine",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "1.0.1"
+  }
+}
