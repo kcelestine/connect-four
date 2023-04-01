@@ -6,18 +6,14 @@ terraform {
       name = "first-one"
     }
   }
-  
-  resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
 }
 
-resource "aws_s3_bucket_acl" "example" {
-  bucket = aws_s3_bucket.b.id
-  acl    = "private"
+# Configure the AWS Provider
+provider "aws" {
+  region = "us-east-1"
 }
+
+# Create a VPC
+resource "aws_vpc" "example" {
+  cidr_block = "10.0.0.0/16"
 }
